@@ -1,19 +1,16 @@
-import Time from './components/widgets/time/Time'
-import Counter from './components/widgets/counter/Counter';
+import Time from "./components/widgets/time/Time";
+import Counter from "./components/widgets/counter/Counter";
 
-import './App.scss';
+import "./App.scss";
 
 function App() {
-
   return (
-    <div className='app'>
-      <h1>Counter App</h1>
+    <div className="app-container">
+      <h1>Noraa's App</h1>
       <Counter />
       <Time />
-
     </div>
   );
 }
-
 
 export default App;
