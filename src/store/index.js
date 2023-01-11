@@ -25,7 +25,9 @@ const counterReducer = (state = initialState, action) => {
     }
 
 }
-const reducerFn = () => combineReducers(counterReducer);
+const reducerFn = () => combineReducers({
+    counterState: counterReducer
+});
 
 
 const store = createStore(reducerFn);

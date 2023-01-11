@@ -22,7 +22,7 @@ function App() {
   // new Date()
 
   return (
-    <div>
+    <div className='app'>
       <h1>Counter App</h1>
       <div className="counter-container">
         <h2>{counter}</h2>
