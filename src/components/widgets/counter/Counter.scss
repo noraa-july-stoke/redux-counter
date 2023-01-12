@@ -9,11 +9,14 @@
     justify-content: center;
     color: white;
     margin: 10px;
+
     button {
         color: white;
         background-color:black;
-        border: 2px solid white;
+        border: 3px solid white;
         margin: 5px;
-        width: 100px;
+        width: 120px;
+        height: 60px;
+        border-radius: 10px
     }
 }

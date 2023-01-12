@@ -2,8 +2,10 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Counter.scss";
 
 const Counter = () => {
-  const counter = useSelector((counterState) => counterState.counter);
+
+  const counter = useSelector(state => state.counter.counter.counter);
   const dispatch = useDispatch();
+  console.log(counter)
 
   const increment = () => {
     dispatch({ type: "INC" });
@@ -17,12 +19,13 @@ const Counter = () => {
     dispatch({ type: "ADD", payload: 10 });
   };
 
+
   return (
     <div className="counter-container">
-      <h2>Counter: {counter}</h2>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-      <button onClick={addBy}>Add By 10</button>
+      <h2>Counter:{counter}</h2>
+      <button onClick={increment}>INCREMENT</button>
+      <button onClick={decrement}>DECREMENT</button>
+      <button onClick={addBy}>ADD 10</button>
     </div>
   );
 };
